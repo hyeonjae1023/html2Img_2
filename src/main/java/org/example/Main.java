@@ -93,7 +93,7 @@ public class Main {
         screenshotFile.renameTo(outputImageFile);
 
         // 브라우저 종료
-        driver.quit();
+//        driver.quit();
 
     }
 }
