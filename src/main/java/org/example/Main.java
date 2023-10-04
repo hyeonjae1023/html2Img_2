@@ -86,13 +86,14 @@ public class Main {
         String timestamp = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
         String screenshotFileName = "screenshot_" + timestamp + ".png";
 
-// 스크린샷을 저장할 경로 설정 (원하는 경로로 변경하세요)
+        // 스크린샷을 저장할 경로 설정 (원하는 경로로 변경하세요)
         File outputImageFile = new File("downloads/" + screenshotFileName);
 
-// 스크린샷 파일을 원하는 경로로 복사
+        // 스크린샷 파일을 원하는 경로로 복사
         screenshotFile.renameTo(outputImageFile);
 
         // 브라우저 종료
-//        driver.quit();
+        driver.quit();
+
     }
 }
