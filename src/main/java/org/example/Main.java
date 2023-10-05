@@ -47,13 +47,13 @@ public class Main {
 
         //첫 번째 탭으로 전환
         driver.switchTo().window(tabs.get(0));
-        driver.get("https://velog.io/");
+        driver.get("https://www.naver.com/");
 
         Util.sleep(1000);
 
         // 두 번째 탭으로 전환
         driver.switchTo().window(tabs.get(1)); // 0번 탭이 첫 번째 탭, 1번 탭이 두 번째 탭
-        driver.get("https://velog.io/");
+        driver.get("https://www.naver.com/");
 
         File downloadsFolder = new File("downloads");
 
